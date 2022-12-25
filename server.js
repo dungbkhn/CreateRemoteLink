@@ -100,18 +100,18 @@ httpsServer.listen(PORT, () => {
 /********
  * GET IMAGE FILE *
  * **********/
- 
+/* 
 app.get('/images/:fileName', function(req ,res) {
     var path = require('path');
     var file = path.join(rootDir + "/images/", req.params.fileName);
     res.sendFile(file);
 });
-
+*/
 
 /********
  * LOG IN *
  * **********/
- 
+/* 
 // create a route for the app
 app.get('/', (req, res) => {
   fs.readFile(__dirname + '/index.html', function (err,html) {
@@ -162,11 +162,11 @@ app.post('/',function(req,res){
 	}
 
 });
-
+*/
 /********
  * LOG OUT *
  * **********/
- 
+/* 
 app.get('/logout', (req, res) => {
 	try{
 	  let p = querystring.parse(req.url)['/logout?p'];
@@ -193,7 +193,7 @@ app.get('/logout', (req, res) => {
 	}
 });
 
-
+*/
 /**************
  * Download By Link *
  **************/
@@ -250,7 +250,7 @@ app.get('/startdownlink', function(req ,res) {
 /***************
  * Back To Main Page
  * *************/
-
+/*
 app.get('/path', (req, res) => {
         try{
                 let p = querystring.parse(req.url)['/path?p'];
@@ -287,12 +287,12 @@ app.get('/path', (req, res) => {
 		}
 });
 
-
+*/
 
 /***************
  * Remote Link
  * *************/
-
+/*
 app.post('/trycrl',function(req,res){
 	try{
 		 console.log("trycrl with data:" + req.body.ipv6 + req.body.token + ":" + req.body.root + "/"+req.body.data);
@@ -481,7 +481,7 @@ app.get('/crl', function(req ,res) {
 
 });
 
-
+*/
 /*********
  * Other Functions
  * *************/
